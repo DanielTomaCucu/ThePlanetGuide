@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<title>ThePlanetGuide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <link rel="icon" href="logo.png">
+<style>
+ 
+	
+	
+	
+	
+	
+::-webkit-scrollbar {
+    width: 0px;
+}
+	
+	body{
+	  font-family: Century Gothic Regular; 
+	  background:#000;
+}
+
+
+
+
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+ 
+  
+.layer01{
+	background-color:#d8d8d8;
+
+}
+
+.img-thumbnail{
+	margin-bottom:50px;
+}
+
+
+.l1-h2{
+	text-align:center;
+	padding-top:50px;
+	padding-bottom:50px;	
+}
+
+
+
+.l1-p1{
+	padding-left:10px;
+	padding-top:20px;
+	vertical-align: baseline;
+    font-family: inherit;
+	line-height: 1.5 !important;
+     letter-spacing: 1px;
+	color:#464545;
+    font-style: inherit;
+    font-size: 100%;
+	    
+	
+}
+.layer02{
+	background-color:#f6f6f6;
+}
+
+.layer03{
+	background-color:#fff
+}
+
+.layer04{
+	background-color:#f6f6f6;
+}
+
+.layer05{
+	background-color:#0e0e0e;
+	color:#dcdcdc;
+}
+.l5-p1{
+	padding-left:10px;
+	padding-top:20px;
+	vertical-align: baseline;
+    font-family: inherit;
+	line-height: 1.5 !important;
+    letter-spacing: 1px;
+	color:#dcdcdc;
+    font-style: inherit;
+    font-size: 100%;
+	    
+}
+
+.layer06{
+	background-color:#202020;
+	color:#dcdcdc;
+}
+.l6-p1{
+	padding-left:10px;
+	padding-top:20px;
+	vertical-align: baseline;
+    font-family: inherit;
+	line-height: 1.5 !important;
+    letter-spacing: 1px;
+	color:#dcdcdc;
+    font-style: inherit;
+    font-size: 100%;
+	    
+}
+.layer07{
+	background-color:#000;
+	color:#dcdcdc;
+}
+
+
+
+
+
+
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+ 
+}
+.progress-container {
+  width: 100%;
+  height: 6px;
+  background: #343a40;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #ff0000;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
+
+
+
+
+.zoom {
+    padding: 50px;
+    
+    transition: transform .3s;
+   
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+
+
+
+
+
+i {
+  border: solid #17a2b8;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-right:7px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+</style>
+<body>
+	
+
+
+
+ <!-- meniu-->
+
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+	<div class="container">	
+			<a class="navbar-brand" href="#"><img src="theplanetguide.logo.png" style="width:250px;"></a>
+				<button class="navbar-toggler" 
+					type="button"
+					data-toggle="collapse" 
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+      
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<a href="scena-spatiala.html" button class="btn btn-outline-success my-2 my-sm-0 btn btn-outline-info">Scena Spatiala</button></a>
+				</form>
+			</div>
+		</nav>
+	</div>
+
+
+
+ <!-- Carusel-->
+		
+	
+	<div id="demo" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<li data-target="#demo" data-slide-to="0" class="active"></li>
+			<li data-target="#demo" data-slide-to="1"></li>
+			<li data-target="#demo" data-slide-to="2"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src=" planeta-3.jpg"  width="1100" height="500">
+				<div class="carousel-caption">
+				</div>   
+			</div>
+			<div class="carousel-item">
+				<img src=" wall2.png"  width="1100" height="500">
+				<div class="carousel-caption">
+		   
+				</div>   
+			</div>
+			<div class="carousel-item">
+				<img src="wall3.png" width="1100" height="500">
+				<div class="carousel-caption">
+			
+				</div>   
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#demo" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a class="carousel-control-next" href="#demo" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+
+
+
+<!-- Imaginile necesare pentru crearea planetei-->
+
+	<div class="layer01">
+		<div class="container-fluid">
+			<h2 class="l1-h2">Imagini necesare pentru crearea planetei</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<img src="textura.png" class="img-thumbnail" >
+		
+				</div>
+				<div class="col-md-6">
+					<img src="nori.jpg" class="img-thumbnail" >
+				</div>
+  
+			</div>
+		</div>
+
+​	</div>
+
+
+	<div class="w3-overlay w3-hide-large" onclick="w3_close()" id="myOverlay"></div>
+		<div class="layer02">
+			<div class="container">
+				<h2 class="l1-h2">Pasul 1</h2>
+				<div class="row">   
+		
+					<div class="col-md-4">
+						<p class="l1-p1">
+							Pentru crearea unui proiect nou in Photoshop apasam pe  butonul "<b>File</b>" apoi  "<b>New...</b>", se va deschide o casuta de dialog unde vom alege  un nume proiectului, vom alege rezolutia proiectului, in cazul nostru <b>4000px / 4000px </b>, numarul de pixeli pe inch, putand folosii <b>72px/inch</b>pentru proiecte  sau <b>300px/inch </b>proiectele destinate printarii pentru o calitate mai buna. La "<b>Color mode</b>" vom alege filtrul <b>RGB</b> pentru imaginile folosite in cadrul unor aplicatii sau designului web sau filtrul <b>CMYK</b> pentru imaginile folosite printarii. Apoi vom apasa pe "<b>OK</b>" pentru generarea proiectului....  
+						</p>
+			
+		
+					</div>
+					<div class="col-md-8">		
+						<div class="zoom">	<img src="pas1.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+  
+		<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+			<span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+			<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+				<img id="img01" class="w3-image">
+				<p id="caption"></p>
+			</div>
+		</div>
+
+  
+   
+   
+   
+   
+   <div class="layer03">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 2</h2>
+				<div class="row">   
+					<div class="col-md-8">		
+						<div class="zoom">	<img src="pas2.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+					</div>
+					<div class="col-md-4">
+						<p class="l1-p1">	....Dupa crearea proiectului vom aduce textura din alt document cu drag and drop, apoi apasand "<b>Ctrl + T</b>" vom redimensiona textura pentru proiectul nostru. Apoi, pentru crearea unei elipse vom apasa "<b>U</b>" sau vom alege "<b>Elipse Tool"</b> din meniul de unelte din partea stanga. Dupa aceasta vom apasa dublu click in layer-ul elipsei, se va descchide "<b>Layer Style</b>", in meniul "<b>Blending Opions"</b> fill-ul il vom da la 0. Apoi, bifam "<b>Stroke</b>". Vom alege culoarea rosie si o grosime de 5px. Apasand "<b>OK</b>" elipsa noastra se va golii fiind vizibila doar conturul rosu dupa care ne vom ghida in crearea planetei...  
+						</p>
+			
+		
+					</div>
+				</div>
+		</div>
+	</div>
+   
+   
+   
+   
+   	<div class="layer04">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 3</h2>
+			<div class="row">   
+			
+				<div class="col-md-4">
+					<p class="l1-p1">	...Apoi, cu layer texturii selectat vom apasa un "<b>Ctrl+Click</b>" in thumbnail-ul elpsei, acest lucru va crea o selectie dupa care se va face taietura. In meniul "<b>Filter</b>" vom alege "<b>Distort</b>" si poi "<b>Spherize</b>". In casuta de dialog care tocmai s-a deschis vom duce "<b>Amount-ul</b>" la 100% pentru o sfera perfect rotunda, vom apasa "<b>OK</b>". Apoi vom apasa "<b>Ctrl+J</b>" pentru a ne crea o copie la textura  sferificata. Vom inchide ochiul texturii anterioare, urmand sa lucram doar pe textura sferificata...</p>
+			
+		
+				</div>
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas3.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+			</div>
+		</div>
+    </div>
+   
+   
+   
+   
+  	<div class="layer05">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 4</h2>
+			<div class="row">   
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas4.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+				<div class="col-md-4">
+					<p class="l5-p1">...Dupa sferificarea texturii, pentru  a nu lucra distructiv vom mai crea inca 3 layere, avand layer-ul "<b>Planeta</b>" selectat vom folosi scurtatura"<b>Ctrl+J</b>" de 3 ori pentru a copia layer-ul "<b>Planeta</b>". Layer-ul "<b>Planeta</b>" fiind existent din pasul anterior. Primul layer il von redenumii "<b>inner glow</b>", al treilea "<b>umbra</b>", iar ultimul "<b>outer glow</b>", asupra carora vom intervenii ulterior cu editarile necesare. Redenumirea numelui unui layer se face prin dublu click in numele acestuia...	</p>
+			
+		
+				</div>
+			</div>
+		</div>
+   </div>
+   
+   
+   
+   		<div class="layer05">
+			<div class="container">
+				<h2 class="l1-h2">Pasul 5</h2>
+				<div class="row">   
+			
+					<div class="col-md-4">
+						<p class="l5-p1">	...Dupa crearea layerelor vom apasa dublu click pe layer-ul "<b>inner glow</b>" penrtru a intra in "<b>Layer Style</b>" si vom incepe editarea lui. In meniul "<b>Inner Glow</b>" vom seta "<b>Blend Mode-ul</b>" pe Screen", pentru a avea un albastru putin incolor "<b>Opacity</b>" la 70%," <b>Noise</b>" la 0% pentru a avea o culoare uniforma, fara pete de culoare, iar apoi vom alege o culoare de albastru pentru atmosfera noastra. La "<b>Technique</b>"il vom seta pe Softer, "<b>Source</b>"il vom lasa pe Edge pentru ca culoarea noastra sa se extinda spre exterior."<b>Choke</b>"il setam la 0%, iar "<b>Size</b>" il vom duce la maxim pentru a avea o difuzie de culoare pe o portiune cat mai mare astfel atmosfera noastra va parea cat mai autentica .In final setam "Range-ul" la 50%. Si apoi "<b>OK</b>"pentru aplicarea efectelor pe layer </p>
+			
+		
+				</div>
+				<div class="col-md-8">		
+			<div class="zoom">	<img src="pas5.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+			</div>
+		</div>
+		</div>
+   </div>
+   
+   
+   
+   
+   		<div class="layer05">
+			<div class="container">
+				<h2 class="l1-h2">Pasul 6</h2>
+				<div class="row">   
+					<div class="col-md-8">		
+						<div class="zoom">	<img src="pas6.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+					</div>
+					<div class="col-md-4">
+						<p class="l5-p1">	...In Layer-ul "<b>outer glow</b>"vom merge in meniul "<b>Outer Glow</b>" si vom aplica aproximativ aceleasi setari cum am aplicat la "<b>Inner Glow</b>"...</br>
+						"<b>Blend Mode-ul</b>" il vom seta pe Screen, "<b>Opacity</b>" il vom duce la 60%, iar "<b>Noise</b>" il vom lasa pe 0%, apoi alegem un albastru deschis pentru atmosfera. La "<b> Technique</b>" vom alege Softer pentru a avea colturile cat mai difuze. "<b>Spread-ul</b>" il lasam la 0%, iar"<b>Size</b>" il vom aduce undeva la 200px pentru a crea impresia de lumima care vine de pe pamant. "<b>Range</b>" il vom lasa undeva la 50%, astfel culoarea cu cat se indeparteaza de pamant incepe sa dispara, "<b>Jitter</b>" la 0% si apoi "<b>OK</b>"... </p>
+			
+		
+					</div>
+				</div>
+			</div>
+		</div>
+   
+   	<div class="layer05">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 7</h2>
+			<div class="row">   
+			
+				<div class="col-md-4">
+					<p class="l5-p1">	...Pentru a creea umbra planetei va trebui sa cream un layer nou prin comanda "<b>Ctrl+Sift+N</b>", dupa crearea layer-ului il vom aduce deasupra layer-ului cu planeta. Apoi cu layer-ul "<b>umbra</b>" selectat vom intra in Layer Style pentru a aplica urmatoarele efecte : </br>In meniul "<b>Color Overlay</b>" vom seta "<b>Blend Mode-ul </b>" pe normal si vom alege un negru pur prin codul de culoare "<b>#000000</b>", apoi "<b>OK</b>" pentru aplicarea setarilor in layer-ul "<b>umbra</b>". Pentru a se aplica corect pentru proiectul noastru, vom imbina layer-ul creat mai devreme cu layer-ul "<b>umbra</b>" selectandu-le pe ambele tinand "<b>Ctrl</b>" apasat si apoi "<b>Ctrl+E</b>"....</p>
+			
+		
+				</div>
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas7.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+			</div>
+		</div>
+	</div>
+   
+   
+   
+   		<div class="layer05">
+			<div class="container">
+				<h2 class="l1-h2">Pasul 8</h2>
+				<div class="row">   
+					<div class="col-md-8">		
+						<div class="zoom">	<img src="pas8..png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+					</div>
+					<div class="col-md-4">
+						<p class="l5-p1">	...Pentru a marii efectul de autenticitate a planetei, pentru fiecare layer vom aplica o masca pentru a putea sterge din informatiile de culoare atat cat avem nevoie. Mastile le folosim pentru a nu lucra distructiv si pentru a  putea intervenii ulterior in caz ca am gresit. Masca o cream avand layerul selectat apasam pe dreptunghiul cu cerc in mijloc din josul ecranului in dreapta. Pentru primul si al patrulea layer inversam efectul mastii apasand "<b>Ctrl+I</b>" Stergerea informatiilor de culoare se realizeaza folosing "<b>Brush-ul</b>", culoarea neagra acopera, iar cea alba descopera culoare...</p>
+			
+		
+					</div>
+				</div>
+			</div>
+		</div>
+   
+   	<div class="layer06">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 9</h2>
+			<div class="row">   
+			
+				<div class="col-md-4">
+						<p class="l5-p1">	...La psaul acesta vom incerca sa aducem atmosfera si in interiorul planetei, nu doar pe marginea acesteia. Prntru a realiza acest luctru vom apasa dublu click pe layer-ul "<b>Planeta </b>".Acest lucru ne va duce in "<b>Layer Style</b>". Aici vom selecta "<b>Color Overlay</b>", unde vom selecta o culoare cat mai apropriata de atmosfera noastra, adica un albastru deschis. Pentru a avea efectul dorit ii vom schimba "<b>Blend Mode-ul</b>" pe Exclusion...   </p>
+			
+		
+				</div>
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas9..png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+			</div>
+		</div>
+   </div>
+   
+   	<div class="layer06">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 10</h2>
+			<div class="row">   
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas10.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+				<div class="col-md-4">
+					<p class="l5-p1"> ... La pasul acesta nu vom face nimic altceva decat sa transformam priectul nostru intr-un "<b>Smart Object</b>". Folosim aceasta tehica pentru a nu lucra distructiv, am putea in acelas timp sa lucram direct pe proiect sau sa rasterizam toate layerele, dar daca facem acest lucru nu vom mai putea intervenii ulterior pentru editare. Pentru a crea un Smart Object selectam toate layerele, apoi "<b>Click-Dreapta</b>", vom alege "<b>Convert to Smart Object</b>", apoi Enter. Se va crea un poiect nou cu layerele selectate. Tot ce vom edita in proiectul nou se va aplica automat si pe cel vechi.... </p>
+			
+		
+				</div>
+			</div>
+		</div>
+   </div>
+   
+   <div class="layer06">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 11</h2>
+			<div class="row">   
+				
+				<div class="col-md-4">
+					<p class="l5-p1">	...In proiectul nou creat vom creea norii pentru planeta noastra. Vom aduce textura cu nori din alt proiect cu "<b>Drag and Drop</b>", o vom redimensiona cu "<b>Ctrl+T</b>". In caz ca nu mai aveti elipsa o vom crea din nou exact cum am facut in "<b>Pasul 2</b>". Apoi cu layer texturii selectat vom apasa un "<b>Ctrl+Click</b>" in thumbnail-ul elpsei, acest lucru va crea o selectie dupa care se va face taietura .In meniul "<b>Filter</b>" vom alege "<b>Distort</b>" si poi "<b>Spherize</b>". In casuta de dialog care tocmai s-a deschis vom duce duce "<b>Amount-ul</b>" la 100%, vom apasa "<b>OK</b>". Apoi vom apasa "<b>Ctrl+J</b>" pentru a ne creea o copie la textura  sferificata... </p>
+			
+		
+				</div>
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas11.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+			</div>
+		</div>
+   </div>
+   
+   <div class="layer06">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 12</h2>
+			<div class="row">   
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas12.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+				<div class="col-md-4">
+					<p class="l5-p1">	....Pentru ultimul pas vom aduce textura sferificata din Smart Object in proiectul principal, o vom redimensiona in caz ca e nevoie, pentru a fi de aceeasi dimensiune cu planeta. Apoi ii vom schima "<b>Blend Mode-ul</b>" din Normal pe "<b>Screen</b>". In esenta modul de culoare "<b>Screen</b>"nu face nimic altceva decat sa stearga orice informatie de culoare neagra si pastreaza restul culorilor. In layer-ul texturii vom adauga o masca si o vom inversa cu "<b>Ctrl+I</b>" pentru a sterge informatii de culoare in zona intunecata . </p>
+			
+		
+				</div>
+			</div>
+		</div>
+   </div>
+ 
+ 
+ 
+ 
+ 	
+
+<img src="footer.png" class="img-fluid">
+
+
+
+
+<div class="layer07">
+		<div class="container-fluid">
+			<h2 class="l1-h2">Rezultat final</h2>
+				<div class="row">
+					<div class="col-md-12">
+						<img src="planeta.png" class="img-fluid" class="img-fluid" style="width:100%" onclick="onClick(this)" >
+					</div>
+					
+					
+				</div>
+		</div>
+
+​	</div>
+
+
+
+
+
+
+	<div class="layer07">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="scena-spatiala.html" ><button type="button" class="btn btn-outline-info btn-block"><i class="right"></i><i class="right"></i>Scena Spatiala</button></a>
+						</br>
+						</br>
+						</br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+<!--Script penrtru deschiderea galeriei -->
+<script>
+
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+
+
+<!--Script bara de progres -->
+
+
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+		<audio height="" width="" autoplay loop controls  class="audio-header">
+			<source src="proiect.mp3" type="audio/mp3">
+		</audio>
+
+
+</body>
+</html>
+	
