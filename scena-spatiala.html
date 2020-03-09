@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<title>ThePlanetGuide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <link rel="icon" href="logo.png">
+<style>
+ 
+	
+	
+	
+	
+	
+::-webkit-scrollbar {
+    width: 0px;
+}
+	
+	body{
+	  font-family: Century Gothic Regular; 
+	  background:#000;
+}
+
+
+
+
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+ 
+  
+.layer01{
+	background-color:#d8d8d8;
+
+}
+
+.img-thumbnail{
+	margin-bottom:50px;
+}
+
+
+.l1-h2{
+	text-align:center;
+	padding-top:50px;
+	padding-bottom:50px;	
+}
+
+
+
+.l1-p1{
+	padding-left:10px;
+	padding-top:20px;
+	vertical-align: baseline;
+    font-family: inherit;
+	line-height: 1.5 !important;
+     letter-spacing: 1px;
+	color:#464545;
+    font-style: inherit;
+    font-size: 100%;
+	    
+	
+}
+.layer02{
+	background-color:#f6f6f6;
+}
+
+.layer03{
+	background-color:#fff
+}
+
+.layer04{
+	background-color:#f6f6f6;
+}
+
+.layer05{
+	background-color:#0e0e0e;
+	color:#dcdcdc;
+}
+.l5-p1{
+	padding-left:10px;
+	padding-top:20px;
+	vertical-align: baseline;
+    font-family: inherit;
+	line-height: 1.5 !important;
+    letter-spacing: 1px;
+	color:#dcdcdc;
+    font-style: inherit;
+    font-size: 100%;
+	    
+}
+
+.layer06{
+	background-color:#202020;
+	color:#dcdcdc;
+}
+.l6-p1{
+	padding-left:10px;
+	padding-top:20px;
+	vertical-align: baseline;
+    font-family: inherit;
+	line-height: 1.5 !important;
+    letter-spacing: 1px;
+	color:#dcdcdc;
+    font-style: inherit;
+    font-size: 100%;
+	    
+}
+.layer07{
+	background-color:#000;
+	color:#dcdcdc;
+}
+
+
+
+
+
+
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+ 
+}
+.progress-container {
+  width: 100%;
+  height: 6px;
+  background: #343a40;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #ff0000;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
+
+
+
+
+.zoom {
+    padding: 50px;
+    
+    transition: transform .3s;
+   
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+
+
+
+
+
+i {
+  border: solid #17a2b8;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-right:7px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+</style>
+<body>
+	
+
+
+
+ <!-- meniu-->
+
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+	<div class="container">	
+			<a class="navbar-brand" href="#"><img src="theplanetguide.logo.png" style="width:250px;"></a>
+				<button class="navbar-toggler" 
+					type="button"
+					data-toggle="collapse" 
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+      
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<a href="index.html" button class="btn btn-outline-success my-2 my-sm-0 btn btn-outline-info">Scena Planeta</button></a>
+				</form>
+			</div>
+		</nav>
+	</div>
+
+
+
+ <!-- Carusel-->
+		
+	
+	
+				<img src="wall3.png"  class="img-fluid">
+				
+		
+
+
+
+
+
+
+	<div class="w3-overlay w3-hide-large" onclick="w3_close()" id="myOverlay"></div>
+		<div class="layer02">
+			<div class="container">
+				<h2 class="l1-h2">Pasul 1</h2>
+				<div class="row">   
+		
+					<div class="col-md-4">
+						<p class="l1-p1">
+							La fel ca la scena cu planeta pentru a crea un proiect nou ne vom duce la "<b>File </b>" apoi la "<b>New</b>", se va deschide o casuta de dialog in care ii vom da un nume poiectului apoi ii vom seta dimeniunile proiectului, in cazul nostru vom folosii o rezolutie FULL HD, dupa care vom seta rezoluta de 72 de pixeli/inci si modul de culoare "<b>RGB</b>". Vom apasa "<b>OK</b>" pentru generarea proiectului...
+						</p>
+			
+		
+					</div>
+					<div class="col-md-8">		
+						<div class="zoom">	<img src="pas2.1.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+  
+		<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+			<span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+			<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+				<img id="img01" class="w3-image">
+				<p id="caption"></p>
+			</div>
+		</div>
+
+  
+   
+   
+   
+   
+   <div class="layer03">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 2</h2>
+				<div class="row">   
+					<div class="col-md-8">		
+						<div class="zoom">	<img src="pas2.2.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+					</div>
+					<div class="col-md-4">
+						<p class="l1-p1">	....Pentru a creea stelele nu vom face nimic altceva decat sa adaugam zgomot dupa zgomot dupa zgomot. Dupa colorarea primului layer cu culoarea neagra vom crea un layer nou prin comanda "<b>Ctrl+Sift+N</b>" pecare o vom colora la fel in culoarea neagra. Pentru a genera zgomot ne vom duce la "<b>Filter</b>", in meniul deschis vom alege "<b>Noise</b>", apoi "<b>Add Noise...</b>". Se va deschide o casuta de dialog unde vom alege "<b>Amount-ul</b>" la 70%, "<b>Distribution</b>" il vom seta "<b>Gaussian</b>" si "<b>Monocromatic</b>" pentru a avea sunete in format alb-negru. Dupa toate astea vom apasa pe "<b>OK</b>" pentru aplicarea setarilor pe layer... 
+						</p>
+			
+		
+					</div>
+				</div>
+		</div>
+	</div>
+   
+   
+   
+   
+   	<div class="layer04">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 3</h2>
+			<div class="row">   
+			
+				<div class="col-md-4">
+					<p class="l1-p1">	...Momentan avem prea putina informatie de culoare si prea multa densitate de zgomot. Pentru a putea edita zgomotul mai tarziu trebuie sa il bluram pentru a mai adauga ceva informatie de coloare. Pentru a blura zgomotul ne vom duce la "<b>Filter</b>" apoi la "<b>Blur</b>" si "<b>Gaussian Blur...</b>", se va deschide o casuta de dialog in care vom seta blur-ul la 0.5 si apoi "<b>OK</b>"... </p>
+			
+		
+				</div>
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas2.3.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+			</div>
+		</div>
+    </div>
+   
+   
+   
+   
+  	<div class="layer05">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 4</h2>
+			<div class="row">   
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas2.4.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+				<div class="col-md-4">
+					<p class="l5-p1">...Dupa blurarea zgomotului avem destula informatie de culoare pentru a-l putea edita. Momentan avem o densitate prea mare de zgomot si nu seamana cu stelele. Pentru asta vom merge la "<b>Image</b>" cu layerul cu zgomot selectat, apoi la "<b>Ajustments</b>" dupa care la "<b>Levels</b>". Dupa toate astea se va deschide o casuta de dialog unde vom face setari doar la "<b>Input Levels</b>" unde vom aduce albul la inceputul curbei, la fel si tonurile de mijloc, iar negrul il vom trage la dreapta. Vom face toate astea pentru a intuneca unele parti si altele le vom lumina pentru a avea o densitate mai mica de zgomot ...	</p>
+			
+		
+				</div>
+			</div>
+		</div>
+   </div>
+   
+   
+   
+   		<div class="layer05">
+			<div class="container">
+				<h2 class="l1-h2">Pasul 5</h2>
+				<div class="row">   
+			
+					<div class="col-md-4">
+						<p class="l5-p1">...Pentru ca spatiul sa para mai realist ne vor trebui stele de dimensiuni diferite. Pentru asta vom repeta procedura de la pasul anterior doar ca pe acestea le vom scala. Vom marii stelel cu 200% sau le putem marii cat de mult dorim apasand  "<b>Ctrl+T</b>". Fiind layerul cel mai deasupra doar el se va vedea, pentru a fii vizibile si celelalte layere setam  "<b>Blend Mode-ul </b>" pe  "<b>Screen</b>", astfel negrul va disparea lasand vizibile celelalte culori si layerele de sub el... 	 </p>
+			
+		
+				</div>
+				<div class="col-md-8">		
+			<div class="zoom">	<img src="pas2.5.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+			</div>
+		</div>
+		</div>
+   </div>
+   
+   
+   
+   
+   		<div class="layer05">
+			<div class="container">
+				<h2 class="l1-h2">Pasul 6</h2>
+				<div class="row">   
+					<div class="col-md-8">		
+						<div class="zoom">	<img src="pas2.6.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+					</div>
+					<div class="col-md-4">
+						<p class="l5-p1">	...Acum avem un spatiu cu stele, dar avem si unele locuri unde este negru complet, in spatiu asta nu este posibil. Pentru a rezolva asta vom creea inca un layer cu stele doar ca acum stelele le vom face mult mai mici astfel incat sa fie putin vizibile, dar sa fie acolo. Acum avem o cantitate mare de stele si sunt prea uniforme, astfel vom apica cate o masca fiecarui layer cu stele si cu brush-ul de culoare neagra vom sterge ceea ce credem ca este in plus, iar cu culoarea alba putem sa readaugam informatii de culoare... </p>
+			
+		
+					</div>
+				</div>
+			</div>
+		</div>
+   
+   	<div class="layer05">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 7</h2>
+			<div class="row">   
+			
+				<div class="col-md-4">
+					<p class="l5-p1">	...Pentru ca spatiul nostru sa fie mai credibil va trebuii sa adaugam nori, in spatiu exista praf cosmic si asta vom incerca si moi sa cream. Ne vom duce la  "<b>Filter</b>" apoi la  "<b>Render</b>" dupa care la  "<b>Clouds</b>". Setarile astea ne vor randa nori in 2 culori.  Aceste 2 culori le vom alege din  "<b>Foreground</b>" si  "<b>Background</b>" Noi vom folosi culoarea albastra si neagra, dupa care vom creea inca un layer cu setarile anterioare doar ca schimbam clorile. Vom alege un mov si negru... </p>
+			
+		
+				</div>
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas2.7.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+			</div>
+		</div>
+	</div>
+   
+   
+   
+   		<div class="layer05">
+			<div class="container">
+				<h2 class="l1-h2">Pasul 8</h2>
+				<div class="row">   
+					<div class="col-md-8">		
+						<div class="zoom">	<img src="pas2.8.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+					</div>
+					<div class="col-md-4">
+						<p class="l5-p1">	...Dupa randarea norilor ei ocupa tot spatiul vizual si nici nu seamana cu praful cosmic, astfel va trebui sa aplicam unele setari pentru al face mai real. Astfel cu layerul selectat vom seta  "<b>Blend Mode-ul</b>" pe  "<b>Screen</b>" asta il va face mai credibil, dar nu de ajuns ...   </p>
+			
+		
+					</div>
+				</div>
+			</div>
+		</div>
+   
+   	<div class="layer06">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 9</h2>
+			<div class="row">   
+			
+				<div class="col-md-4">
+						<p class="l5-p1">	...La psaul acesta vom incerca sa facem praful cosmic mai credibil, astfel cu layerul selectat vom merge la  "<b>Image</b>"  apoi la  "<b>Ajustments</b>" dupa care la  "<b>Levels...</b>", dupa toate astea ni se va deschde o casuta de dialog. Aici vom lucra la  "<b>Imput Levels</b>" unde vom adce mediile mai la dreapta, undeva la incepitul informatiilor de culoare penreu aface norii putin mai dufuzi si ceva mai concentrati in unele locuri...   </p>
+			
+		
+				</div>
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas2.9.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+			</div>
+		</div>
+   </div>
+   
+   
+   	<div class="layer06">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 10</h2>
+			<div class="row">   
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas3.0.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+				<div class="col-md-4">
+					<p class="l5-p1"> ... Acum avem praful cosmic asa cum ar trebuii sa fie, dar iarasi avem o uniformitate prea mare si asta nu este posibil in spatiu. Pentru a elimina acest inconvenient vom aplica fiecarui layer cate o masca in care vom sterge informatii de culoare. Pentru a putea sterge culoare cu masca selectata din layerul dorit vom alege "<b>Brush-ul</b>" din meniul de unelte, ii vom seta o marime si un brush difuz la marfini cu o opacitate de 20%. Dupa asta cu brush-ul de culoare neagra vom sterge unde credem noi ca este prea mult si e prea uniform ...Asta la ambele layere... </p>
+			
+		
+				</div>
+			</div>
+		</div>
+   </div>
+   
+   	<div class="layer06">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 11</h2>
+			<div class="row">   
+			
+				<div class="col-md-4">
+					<p class="l5-p1"> ... In spatu exista si unele stele care ies in evidenta mai mult decat celelalte, acelas lucru vom incerca sa facem si noi. Vom crea un layer nou in care vom crea stelele, vom intra in "<b>Layer Style</b>"  cu dublu-click in layer. Aici vom merge in "<b>Color Overlay</b>" si vom alege o culoare pentru stelele nostre, in cazul nostru albastru cu opacitatea la 100%. Apoi vom selecta "<b>Brush-ul </b>" din meniul de unelte sau apasand"<b>B</b>", ii vom da o marime de 40px difuz, iar opacitatea la 20-30% pentru a nu sarii prea mult in evidenta. Apoi avegem stelele pe care vrem sa le scoatem in evidenta si aplicam brush-ul pe ele....    </p>
+			
+		
+				</div>
+					<div class="col-md-8">		
+					<div class="zoom">	<img src="pas3.1.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+			</div>
+		</div>
+   </div>
+   
+   <div class="layer06">
+		<div class="container">
+			<h2 class="l1-h2">Pasul 12</h2>
+			<div class="row">   
+				<div class="col-md-8">		
+					<div class="zoom">	<img src="pas3.2.png" class="img-fluid" style="width:100%" onclick="onClick(this)" ></div>
+				</div>
+				<div class="col-md-4">
+					<p class="l5-p1">	...La pasul acesta nu vom face nimic altceva decat sa mai adaugam praf cosmic dar ca o carare, ca o unda de praf de o alta culoare. Folosind Brush-ul de o culoare albastra tragem linii peste proiect, asta intr-un layer nou, apoi aplicam o masca peste layer daca simtim nevoia sa mai eliminam din culoare...Dupa care vom aduce planeta din proiectul anterior si imaginea finala este GATA. </p>
+			
+		
+				</div>
+				
+			</div>
+		</div>
+   </div>
+   
+  
+ 
+ 
+ 
+ 	
+
+<img src="footer.png" class="img-fluid">
+
+
+
+
+<div class="layer07">
+		<div class="container-fluid">
+			<h2 class="l1-h2">Rezultat final</h2>
+				<div class="row">
+					<div class="col-md-12">
+						<img src="final03.png" class="img-fluid"class="img-fluid" style="width:100%" onclick="onClick(this)" >
+					</div>
+					
+					
+				</div>
+		</div>
+
+​	</div>
+
+
+
+
+
+
+	<div class="layer07">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="index.html" ><button type="button" class="btn btn-outline-info btn-block"><i class="right"></i><i class="right"></i>Scena Planeta</button></a>
+						</br>
+						</br>
+						</br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+<!--Script penrtru deschiderea galeriei -->
+<script>
+
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+
+
+<!--Script bara de progres -->
+
+
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+
+		<audio height="" width="" loop controls autoplay class="audio-header">
+			<source src="proiect.mp3" type="audio/mp3">
+		</audio>
+
+
+</body>
+</html>
+	
